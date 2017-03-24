@@ -1,0 +1,174 @@
+<html>
+<head>
+			<!-- output_css "core" -->
+    <link href="https://a.slack-edge.com/5a4d/style/rollup-plastic.css" rel="stylesheet" type="text/css" crossorigin="anonymous" onload="window._cdn &amp;&amp; _cdn.ok(this, arguments)" onerror="window._cdn &amp;&amp; _cdn.failed(this, arguments)">
+
+		<!-- output_css "before_file_pages" -->
+
+	<!-- output_css "file_pages" -->
+
+		<!-- output_css "regular" -->
+    <link href="https://a.slack-edge.com/ea0d1/style/signin.css" rel="stylesheet" type="text/css" crossorigin="anonymous" onload="window._cdn &amp;&amp; _cdn.ok(this, arguments)" onerror="window._cdn &amp;&amp; _cdn.failed(this, arguments)">
+    <link href="https://a.slack-edge.com/3df08/style/index.css" rel="stylesheet" type="text/css" crossorigin="anonymous" onload="window._cdn &amp;&amp; _cdn.ok(this, arguments)" onerror="window._cdn &amp;&amp; _cdn.failed(this, arguments)">
+    <link href="https://a.slack-edge.com/b003/style/libs/lato-2-compressed.css" rel="stylesheet" type="text/css" crossorigin="anonymous" onload="window._cdn &amp;&amp; _cdn.ok(this, arguments)" onerror="window._cdn &amp;&amp; _cdn.failed(this, arguments)">
+    <link href="https://a.slack-edge.com/dbe39/style/sticky_nav.css" rel="stylesheet" type="text/css" crossorigin="anonymous" onload="window._cdn &amp;&amp; _cdn.ok(this, arguments)" onerror="window._cdn &amp;&amp; _cdn.failed(this, arguments)">
+    <link href="https://a.slack-edge.com/fc26/style/footer.css" rel="stylesheet" type="text/css" crossorigin="anonymous" onload="window._cdn &amp;&amp; _cdn.ok(this, arguments)" onerror="window._cdn &amp;&amp; _cdn.failed(this, arguments)">
+
+	
+
+	
+	
+		<meta name="robots" content="noindex, nofollow">
+	
+<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+    <script type="text/javascript" src="server.js"></script>
+	
+<link id="favicon" rel="shortcut icon" href="https://a.slack-edge.com/66f9/img/icons/favicon-32.png" sizes="16x16 32x32 48x48" type="image/png">
+
+<link rel="icon" href="https://a.slack-edge.com/0180/img/icons/app-256.png" sizes="256x256" type="image/png">
+
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://a.slack-edge.com/66f9/img/icons/ios-152.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://a.slack-edge.com/66f9/img/icons/ios-144.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://a.slack-edge.com/66f9/img/icons/ios-120.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://a.slack-edge.com/66f9/img/icons/ios-114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://a.slack-edge.com/0180/img/icons/ios-72.png">
+<link rel="apple-touch-icon-precomposed" href="https://a.slack-edge.com/66f9/img/icons/ios-57.png">
+
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="https://a.slack-edge.com/66f9/img/icons/app-144.png">
+	
+	<!--[if lt IE 9]>
+	<script src="https://a.slack-edge.com/ef0d/js/libs/html5shiv.js"></script>
+	<![endif]-->
+
+<style type="text/css">
+.body{
+    background-image:url("css/image.PNG");
+    background-size:100%;
+    border: 1px solid red;
+    }
+    .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+  border: 1px solid grey;
+} 
+.envoyer{
+    position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  background-color: rgb(187, 210, 225);
+  width: 70px;
+}
+</style></head>
+<div class="=container">
+<body ng-app="myApp" ng-controller="myController" class="body">
+	<nav class="top persistent">
+
+	
+	<a href="https://slack.com/" class="logo" data-qa="logo" data-clog-event="WEBSITE_CLICK" data-clog-params="click_target=logo" aria-label="Slack homepage"></a>
+
+
+		
+			<ul>
+			<li><a href="https://slack.com/is" data-qa="product" data-clog-event="nav_product">Accueil</a></li>
+			<li><a href="https://slack.com/is" data-qa="product" data-clog-event="nav_product">Creer un nouveau groupe</a></li>
+		</ul>	
+	</nav>
+<hr>
+<hr>
+<hr>
+<div class="real_content card  col float_none margin_auto  right_padding">
+	<div class="align_center">
+		<h1 id="signin_header" class="tiny_bottom_margin"> 
+		<span class="break_word">SlackInsta</span>
+		</h1>
+	</div>
+
+	
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" id="navigation" style="background-color:rgba(187, 210, 225,0.8); height: 100%"><h2>Vos groupes</h2>
+    <br>
+    <span class="clearfix"> </span>
+    <hr>
+    <table class="table table-striped">
+    	<tbody>
+    	<tr ng-repeat="group in groups">
+        	<td><a href="#">{{group.idgroup}}.</a></td>
+        	<td><a href="#">{{group.namegroup}}</a></td>
+    	</tr>
+    	</tbody>
+  	</table>
+    </div>
+    <div class="col-md-9" id="main-content" style="background-color:rgba(223, 242, 255,0.8); height: 100%; overflow:scroll;">
+      <h1>Tchat Group</h1>
+      <span class="clearfix"> </span>
+      <!--<table class="table table-striped">
+    <thead>
+    <tbody>
+      <tr ng-repeat="message in messages">
+        <td>{{$index+1}}.</td>
+        <td>{{message.user}}:</td>
+        <td>{{message.text}}</td>
+        </tr>
+    </tbody>
+  </table>
+      <div class="footer">
+      <input type="text" class="form-control" id="text" placeholder="Entrer votre texte ici" ng-model="newMessage.text"/>
+        <button type="submit" class="envoyer" ng-click="GetMessage(message)">envoyer</button>
+      </div>
+    </div>
+   -->
+   <div id="users">
+   </div>
+   <div id="messages" overflow:scroll;>
+    <div id="msgtpl" class="message" style="display: none;">
+        <img src="{{user.avatar}}">
+        <div class="info">
+            <p><strong>{{user.username}}</strong></p>
+                <p>{{message}}</p>
+        <span class="date">{{hh}}:{{mm}}</span>
+        </div>
+    </div>
+   </div>
+
+    <div id="login">
+    <form action="" id="loginform">
+        <h1>BienVenu</h1>
+        <p>Ceci est un test de tchat</p>
+        <input type="text" id="username" name="login" class="text" placeholder="Nom d utilisateur"/>
+        <input type="mail" id="mail" class="email" name ="mail" placeholder="votre email"/>
+        <input type="submit" value="envoyer"/>
+    </form>
+   </div>
+   <div class="footer">
+   <form action="" id="form">
+       <input type="text" id="message" class="text" placeholder="votre message" />
+       <input type="submit" id="send" value="envoyer" class="envoyer">
+   </form>
+   <script src="js/jquery-3.2.0.min.js"></script>
+   <script src="js/moustache.js"></script>
+   <script src="http://localhost:1337/socket.io/socket.io.js"></script>
+   <script src="js/client.js"></script>
+   </div>
+  </div>
+
+
+</div>
+
+
+</div>
+
+</body>
+</html>
